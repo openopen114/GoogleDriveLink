@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html "zh-tw" ng-app="App">
+<head>
+	<!--Sep. 02  2016 -->
+	<!-- openopen -->
+	<!-- openopen114@gmail.com -->
+	<meta charset="UTF-8">
+	<title>Google Drive Direct Link Generator</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+	<link rel="stylesheet" href="css/screen.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/angularJS/angular.min.js"></script>
+	<script src="js/angularJS/angular-sanitize.js"></script>  
+</head>
+<body>
+	<div class="FullContent flexCenter flexColumn flexAlignCenter">
+		<img src="images/Google Drive-logo.png" alt="">
+		<h1>Google Drive Direct Link Generator</h1> 
+		<div class="linkForm flexCenter flexColumn" ng-controller="LinkCtrl">
+			<!-- shareable link :   -->
+			<label class="flexAlignCenter">
+				shareable link : 
+	       		<input type='text' placeholder='Google Drive shareable link' name="input" ng-model="GDSL"
+	       		my-enter="GDSLSubmit()" ng-change="change()"
+	       		required>
+	       		<!-- ng-minlength="0" ng-maxlength="10"  -->
+
+	       		<span class="GDSLSubmit flexAlignCenter flexCenter" ng-click="GDSLSubmit()">
+	       			<p>generate</p>
+	       			<i class="material-icons">arrow_forward</i>
+	   			</span>
+	   			<i class="material-icons statusIcon" ng-show="statusOK" ng-style="statusSty">done</i>
+	   			<i class="material-icons statusIcon"  ng-show="!statusOK" ng-style="statusSty">sentiment_very_dissatisfied</i>
+	    	</label>
+
+	    	<!-- download link :  -->
+	    	<label class="flexAlignCenter">
+				download link : 
+	       		<input type='text' id="DLURL" placeholder='Google Drive Direct Download link' name="input" ng-model="GDDL"
+	       		my-enter="GDDLSubmit()" 
+	       		required>
+	       		<!-- ng-minlength="0" ng-maxlength="10"  -->
+
+	       		<span class="GDDLSubmit flexAlignCenter flexCenter" ng-click="GDDLSubmit()" data-clipboard-action="copy" data-clipboard-target="#DLURL">
+	       			<p>copy</p>
+	       			<i class="material-icons">content_copy</i>
+	   			</span>
+	   			<i class="material-icons copyIcon" ng-show="isCopy" ng-style="CopySty">content_copy</i>
+	    	</label>
+		</div>
+
+		
+	</div>
+
+	<script src="js/clipboard.min.js"></script>
+
+	<script src="js/index.js"></script>
+
+	<script>
+	    var clipboard = new Clipboard('.GDDLSubmit');
+
+	    clipboard.on('success', function(e) {
+	        console.log(e);
+	    });
+
+	    clipboard.on('error', function(e) {
+	        console.log(e);
+	    });
+    </script>
+	
+</body>
+</html>

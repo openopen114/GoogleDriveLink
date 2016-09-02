@@ -1,0 +1,88 @@
+/* Class                          */
+/**********************************/
+/* line 4, ../sass/class.scss */
+.md-18 {
+  font-size: 18px;
+}
+
+/* line 6, ../sass/class.scss */
+.md-10 {
+  font-size: 10px;
+}
+
+/* line 9, ../sass/class.scss */
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 11, ../sass/class.scss */
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 13, ../sass/class.scss */
+.card-4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* line 15, ../sass/class.scss */
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+/* line 18, ../sass/class.scss */
+.triangle {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 8px solid transparent;
+  border-bottom-color: red;
+}
+
+/* line 29, ../sass/class.scss */
+.triangle_left {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 11px solid transparent;
+  border-right-color: #fff;
+}
+
+/* line 38, ../sass/class.scss */
+.FloatLeft {
+  position: relative;
+  float: left;
+}
+
+/* line 43, ../sass/class.scss */
+.FloatRight {
+  position: relative;
+  float: right;
+}
+
+/* line 48, ../sass/class.scss */
+.spline {
+  width: 3vw;
+  height: 2.5px !important;
+  background-color: #03A9F4;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**********************************/
+/* line 60, ../sass/class.scss */
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

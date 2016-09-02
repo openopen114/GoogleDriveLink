@@ -1,0 +1,108 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+ 
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities" ;
+@import "compass/typography/links/unstyled-link";
+
+@import "flex.scss";
+@import "class.scss";
+
+
+
+.FullContent{
+	width: 100vw;
+	height: 100vh;
+	background-color: #607D8B;
+
+	img{
+		width: 115px;
+		height: 58px; 
+	}
+
+	h1{
+		font-family: 'Lato', sans-serif;
+		color: #fff; 
+		font-size: 45px;
+		margin-top: 20px;
+	}
+}
+
+
+
+/* linkForm                       */
+/**********************************/
+.linkForm{
+	 width: 100vw; 
+	label{
+ 		color:#fff;
+ 		font-family: 'Questrial', sans-serif;
+ 		font-size: 18px; 
+ 		margin-top: 50px;
+ 		margin-left: auto;
+ 		margin-right: auto; 
+ 		width: 968px;   
+ 		// background-color: red; 
+
+ 		&:nth-child(2){
+ 			// background-color: red; 
+ 			width: 975px;  
+ 		}
+
+ 		.statusIcon{
+ 			margin-left: 8px; 
+ 			display: none;
+ 		}
+
+ 		.copyIcon{
+ 			margin-left: 8px; 
+ 		}
+ 	}
+
+ 	input[type="text"],input[type="password"] {
+			height: 25px;
+			width:680px;
+			margin-left: 10px;
+			@include input-placeholder {font-size: 13px;}
+			font-size:16px;
+			// display:block;border:none;
+			font-family: SourceHanSansK_Light,"Microsoft JhengHei";
+			// background-color:  #E0E0E0; 
+			border: 0px solid #ccc;
+			border-radius: 2px;
+	}
+
+
+	.GDSLSubmit,.GDDLSubmit{
+		width: 98px;
+		height: 25px;
+		margin-left: 10px;
+		background-color: #00E1AE;
+		
+		border:0px solid #fff;
+		
+		border-radius: 3px;
+		cursor: pointer;
+		// transition: all ease-in 0.1s;
+
+		 
+
+		p{
+			font-family: SourceHanSansK_Light,"Microsoft JhengHei";
+			color: #fff;
+			font-size: 13px;
+		}
+
+		i{
+			font-size: 18px;
+			margin-left: 4px;
+		}
+	}		
+}
+/**********************************/
+
+
+

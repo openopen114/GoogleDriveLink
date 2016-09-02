@@ -1,0 +1,329 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Flex                           */
+/**********************************/
+/* line 3, ../sass/flex.scss */
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 9, ../sass/flex.scss */
+.flexLeft {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* line 14, ../sass/flex.scss */
+.flexRight {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 19, ../sass/flex.scss */
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 24, ../sass/flex.scss */
+.flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+/* line 29, ../sass/flex.scss */
+.flexJustifySpaceAround {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 35, ../sass/flex.scss */
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 40, ../sass/flex.scss */
+.flexAlignEnd {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* line 45, ../sass/flex.scss */
+.flexEnd {
+  align-items: flex-end;
+}
+
+/* line 49, ../sass/flex.scss */
+.nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* line 54, ../sass/flex.scss */
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 60, ../sass/flex.scss */
+.space-between {
+  align-content: space-between;
+  display: inline-flex;
+}
+
+/**********************************/
+/* Class                          */
+/**********************************/
+/* line 4, ../sass/class.scss */
+.md-18 {
+  font-size: 18px;
+}
+
+/* line 6, ../sass/class.scss */
+.md-10 {
+  font-size: 10px;
+}
+
+/* line 9, ../sass/class.scss */
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 11, ../sass/class.scss */
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 13, ../sass/class.scss */
+.card-4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* line 15, ../sass/class.scss */
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+/* line 18, ../sass/class.scss */
+.triangle {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 8px solid transparent;
+  border-bottom-color: red;
+}
+
+/* line 29, ../sass/class.scss */
+.triangle_left {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 11px solid transparent;
+  border-right-color: #fff;
+}
+
+/* line 38, ../sass/class.scss */
+.FloatLeft {
+  position: relative;
+  float: left;
+}
+
+/* line 43, ../sass/class.scss */
+.FloatRight {
+  position: relative;
+  float: right;
+}
+
+/* line 48, ../sass/class.scss */
+.spline {
+  width: 3vw;
+  height: 2.5px !important;
+  background-color: #03A9F4;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**********************************/
+/* line 60, ../sass/class.scss */
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 16, ../sass/screen.scss */
+.FullContent {
+  width: 100vw;
+  height: 100vh;
+  background-color: #607D8B;
+}
+/* line 21, ../sass/screen.scss */
+.FullContent img {
+  width: 115px;
+  height: 58px;
+}
+/* line 26, ../sass/screen.scss */
+.FullContent h1 {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  font-size: 45px;
+  margin-top: 20px;
+}
+
+/* linkForm                       */
+/**********************************/
+/* line 38, ../sass/screen.scss */
+.linkForm {
+  width: 100vw;
+}
+/* line 40, ../sass/screen.scss */
+.linkForm label {
+  color: #fff;
+  font-family: 'Questrial', sans-serif;
+  font-size: 18px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 968px;
+}
+/* line 50, ../sass/screen.scss */
+.linkForm label:nth-child(2) {
+  width: 975px;
+}
+/* line 55, ../sass/screen.scss */
+.linkForm label .statusIcon {
+  margin-left: 8px;
+  display: none;
+}
+/* line 60, ../sass/screen.scss */
+.linkForm label .copyIcon {
+  margin-left: 8px;
+}
+/* line 65, ../sass/screen.scss */
+.linkForm input[type="text"], .linkForm input[type="password"] {
+  height: 25px;
+  width: 680px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: SourceHanSansK_Light,"Microsoft JhengHei";
+  border: 0px solid #ccc;
+  border-radius: 2px;
+}
+/* line 61, ../../../../../Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.linkForm input[type="text"]:-moz-placeholder, .linkForm input[type="password"]:-moz-placeholder {
+  font-size: 13px;
+}
+/* line 64, ../../../../../Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.linkForm input[type="text"]::-moz-placeholder, .linkForm input[type="password"]::-moz-placeholder {
+  font-size: 13px;
+}
+/* line 67, ../../../../../Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.linkForm input[type="text"]:-ms-input-placeholder, .linkForm input[type="password"]:-ms-input-placeholder {
+  font-size: 13px;
+}
+/* line 56, ../../../../../Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.linkForm input[type="text"]::-webkit-input-placeholder, .linkForm input[type="password"]::-webkit-input-placeholder {
+  font-size: 13px;
+}
+/* line 79, ../sass/screen.scss */
+.linkForm .GDSLSubmit, .linkForm .GDDLSubmit {
+  width: 98px;
+  height: 25px;
+  margin-left: 10px;
+  background-color: #00E1AE;
+  border: 0px solid #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+/* line 93, ../sass/screen.scss */
+.linkForm .GDSLSubmit p, .linkForm .GDDLSubmit p {
+  font-family: SourceHanSansK_Light,"Microsoft JhengHei";
+  color: #fff;
+  font-size: 13px;
+}
+/* line 99, ../sass/screen.scss */
+.linkForm .GDSLSubmit i, .linkForm .GDDLSubmit i {
+  font-size: 18px;
+  margin-left: 4px;
+}
+
+/**********************************/
